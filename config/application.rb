@@ -27,5 +27,6 @@ module RequiredListening
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    RSpotify::authenticate(Rails.application.secrets.client_id, Rails.application.secrets.client_secret)
   end
 end
